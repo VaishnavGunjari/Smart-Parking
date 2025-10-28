@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Space Detector</title>
+    <link rel="icon" href="data:,">
+    <!-- Link to the static CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Parking Space Detector</h1>
+        <div class="video-container">
+            <video id="videoFeed" controls autoplay muted></video>
+        </div>
+        <div class="controls">
+            <button id="startButton">Start Detection</button>
+            <button id="stopButton">Stop Detection</button>
+        </div>
+        <div class="status">
+            <p id="statusText">Free Spaces: 0 / 0</p>
+        </div>
+    </div>
+    <!-- Link to the static JS file -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
